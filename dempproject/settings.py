@@ -119,7 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(file)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath('staticfiles')))
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
